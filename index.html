@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '508319365326778');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=508319365326778&ev=PageView&noscript=1" /></noscript>
+
+    <title>Товары онлайн</title>
+</head>
+
+<body>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="promo-group">
+                    <div class="promo-name">
+                        <h1 class="promo-title">
+                            ШВАБРА
+                        </h1>
+                        <span class="promo-span">Универсальная</span>
+                    </div>
+                    <img src="./image/promo-img.jpg" alt="">
+                    <div class="promo-discount">
+                        <h2>-50%</h2>
+                    </div>
+                </div>
+                <div class="promo-price">
+                    <div class="promo-old-price">
+                        <h4 class="promo-price-title">
+                            Старая цена
+                        </h4>
+                        <p>12000 тг</p>
+                    </div>
+                    <div class="promo-new-price">
+                        <h4 class="promo-price-title">
+                            Новая цена
+                        </h4>
+                        <p>6000 тг</p>
+                    </div>
+                </div>
+                <div class="promo-promotion">
+                    <h4 class="promo-promotion-title">До конца акции осталось:</h4>
+                    <div class="promo-promotion-clock">
+                        <!-- <span id="hrs">00</span>
+                        <span >:</span>
+                        <span id="min">00</span>
+                        <span >:</span>
+                        <span id="sec">00</span> -->
+                        <span id="timer">24:00:00</span>
+                    </div>
+                </div>
+                <div class="promo-btn">
+                    <button class="promo-button" id="scrollButton">
+                        <img class="promo-btn-icon" src="./image/promo-btn.svg" alt="">
+                        <div class="promo-btn-group">
+                            <h3 class="promo-btn-title">
+                                Заказать сейчас
+                            </h3>
+                            <p class="promo-btn-text">Оплата при получении </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description-group">
+                    <h2 class="description-title">Описание</h2>
+                    <p class="description-text">Швабра треугольная -это супер удобный девайс для уборки дома. Она
+                        подходит для мытья пола, стен, потолка, а также для мытья зеркал, окон и стекол. Шварба имеет
+                        функцию самоотжима, поэтому вам не нужно мочить руки!
+                    </p>
+                    <p class="more-text">
+                        Для этого необходимо намочить тряпку, надетую на швабру, и нажать кнопку, после чего швабра сама
+                        отожмет лишнюю воду.
+                        Благодаря треугольной форме и маневренности она с легкостью дотянется в любой угол и уберет пыль
+                        и грязь в самых недоступных местах.
+                        Насадка из микрофибры поможет в уборке волос от домашних животных.
+                        Телескопическая ручка позволяет делать швабру короче или длиннее для вашего удобства.
+                    </p>
+                    <button id="readMoreBtn" class="readmore">Читать далее</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="character">
+            <div class="container">
+                <div class="character-group">
+                    <h2 class="character-title">Общие характеристки</h2>
+                    <ul class="character-link">
+                        <li class="character-list"><strong>Назначение:</strong> универсальная </li>
+                        <li class="character-list"><strong>Тип:</strong> швабра </li>
+                        <li class="character-list"><strong>Материал ручки:</strong> металл</li>
+                        <li class="character-list"><strong>Материал насадки:</strong>маикрофибра</li>
+                        <li class="character-list"><strong>Размер упаковки:</strong> 110x25 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="peculiarities">
+            <div class="container">
+                <div class="peculiarities-group">
+                    <h3 class="peculiarities-title">Особенности</h3>
+                    <div class="peculiarities-grid">
+                        <div class="peculiarities-block">
+                            <img class="peculiarities-img" src="./image/IMG 2.jpg" alt="">
+                            <p class="peculiarities-text">Для окон,стен, потолков,душевых кабин
+                            </p>
+
+                        </div>
+                        <div class="peculiarities-block">
+
+                            <img class="peculiarities-img" src="./image/IMG 3.jpg" alt="">
+
+                            <p class="peculiarities-text">Автоматический отжим воды</p>
+                        </div>
+                        <div class="peculiarities-block">
+
+                            <img class="peculiarities-img" src="./image/IMG 1.jpg" alt="">
+
+                            <p class="peculiarities-text">Регулируемая
+                                высота ручки</p>
+                        </div>
+                        <div class="peculiarities-block">
+
+                            <img class="peculiarities-img" src="./image/IMG 4.jpg" alt="">
+
+                            <p class="peculiarities-text">Вращение На 360 Градусов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <div class="order-group">
+                    <h2 class="order-main-title">Как сделать заказ?</h2>
+                    <p class="order-subtitle">Подробная инструкция как сделать заказ</p>
+                    <div class="order-block">
+                        <h4>Оформляете заказ на сайте</h4>
+                        <p>Вы заполняете форму ниже, куда необходимо ввести контактную информацию</p>
+                    </div>
+                    <div class="order-block">
+                        <h4>Оператор свяжется с вами</h4>
+                        <p>Наш менеджер свяжется с вам и уточнит адрес и время доставки</p>
+                    </div>
+                    <div class="order-block">
+                        <h4>Приносим заказ</h4>
+                        <p>Доставляем заказ по желаемому адресу</p>
+                    </div>
+                    <div class="order-block">
+                        <h4>Оплачиваете заказ</h4>
+                        <p>Вы платите сумму только после получения заказа наличными или картой</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="container">
+                <div class="form-group">
+                    <h3 class="form-title" id="targetElement">Оставьте заявку</h3>
+                    <form id="contact-Form" action="php/sendmassage.php" method="POST">
+                        <div class="form-contact">
+                            <div class="contact-block">
+                                <input type="name" placeholder="Имя" id="name1">
+                            </div>
+                            <div class="contact-block">
+                                <input type="tel" placeholder="Телефон" id="tel1">
+                            </div>
+                        </div>
+                        <button class="submit" type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
